@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EasyCook - My Meal Plan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>EasyCook</h2>
+        <div class="nav-links">
+            <a href="index.html">Recipe Explorer</a>
+            <a href="mealplan.html" class="active">My Meal Plan</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>My Meal Plan</h1>
+        <p class="hint">Edit the day, servings or note, then click Update. Delete removes a meal.</p>
+
+        <div class="controls">
+            <label>Show day
+                <select id="dayFilter">
+                    <option value="">All days</option>
+                    <option>Monday</option><option>Tuesday</option>
+                    <option>Wednesday</option><option>Thursday</option>
+                    <option>Friday</option><option>Saturday</option>
+                    <option>Sunday</option>
+                </select>
+            </label>
+        </div>
+
+        <p id="message" class="message"></p>
+        <div id="summary" class="details"></div>
+        <div id="planList" class="grid"></div>
+    </div>
+
+    <script src="storage.js"></script>
+    <script src="mealplan.js"></script>
+</body>
+</html>
